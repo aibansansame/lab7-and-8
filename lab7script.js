@@ -1,3 +1,5 @@
+alert("welcome to this quiz!");
+var name = prompt("Enter your name","name");
 const quizData = [
     {
       question:"What is the chemical formula for table salt",
