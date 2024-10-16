@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>functions
+</title>
+<script type="text/javascript">
+function add()
+{
+	document.f1.t3.value=parseInt(document.f1.t1.value)+parseInt(document.f1.t2.value)
+}
+function sub()
+{
+	document.f1.t3.value=parseInt(document.f1.t1.value)-parseInt(document.f1.t2.value)
+}
+function mul()
+{
+	document.f1.t3.value=parseInt(document.f1.t1.value)*parseInt(document.f1.t2.value)
+}
+function divi()
+{
+	document.f1.t3.value=parseInt(document.f1.t1.value)/parseInt(document.f1.t2.value)
+}
+
+
+
+var i = 0; 			
+var images = [];	
+var time = 1000;	
+images[0]="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3bO0W1yJ54dXgQR_kngGkX46qgI1JEqyvxw&s";
+images[1] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl1c09RQ1hqDlqblh8FhjM_ARKxUXncj6dWA&s";
+images[2] = "https://upload.wikimedia.org/wikipedia/commons/5/57/Simple_multiplication.png";
+images[3] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZV76MNZSA4XDtesgKX_htW1_ax1oehWgIA&s";
+
+function changeImg()
+{
+	document.slide.src = images[i];
+
+		if(i < images.length - 1){
+	 
+	  i++; 
+	} else { 
+				i = 0;
+	}
+
+		setTimeout("changeImg()", time);
+}
+
+window.onload=changeImg;
+
+
+</script>
+
+
+</head>
+<body>
+<form name=f1>
+Enter Number 1: <input type="text" name="t1"><br>
+<br>
+Enter Number 2: <input type="text" name="t2"><br>
+<br>
+Result: <input type="text" name="t3"><br>
+<br>
+<input type="button" name="b1" value="Add" onclick="add()">
+<input type="button" name="b2" value="Subtract" onclick="sub()">
+<input type="button" name="b3" value="Multiplication" onclick="mul()">
+<input type="button" name="b4" value="Division" onclick="divi()">
+</form>
+<br>
+<br>
+<img name="slide" width="auto" height="400">
+
+</body>
+</html>
