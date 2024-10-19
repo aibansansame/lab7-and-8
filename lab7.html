@@ -1,41 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Quiz App</title>
- 
-</head>
-<body>
-    <div class="quiz-container" id="quiz">
-      <div class="quiz-header">
-        <h2 id="question">Question Text</h2>
-        <ul>
-          <li>
-            <input type="radio" name="answer" id="a" class="answer">
-            <label for="a" id="a_text">Answer</label>
-          </li>
+<html>
+  <head>
+    <style>
+      #head {
+        font-family: forte;
+        color: darkblue;
+      }
+      body {
+        background-color: #f7ece1;
+        border: 2px dotted red;
+      }
+      .list {
+        font-family: lisu;
+        color: #725ac1;
+      }
+      #bold {
+        font-family: broadway;
+        color: red;
+        padding: 10px;
+      }
+    </style>
+    <title>Question</title>
+  </head>
+  <body>
+    <h3 align="center" id="head">
+      Final Examination for Class X<br />
+      Subject: Science and Technology
+    </h3>
 
-          <li>
-            <input type="radio" name="answer" id="b" class="answer">
-            <label for="b" id="b_text">Answer</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="c" class="answer">
-            <label for="c" id="c_text">Answer</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="d" class="answer">
-            <label for="d" id="d_text">Answer</label>
-          </li>
-        </ul>
-      </div>
-      <button id="submit">submit</button>
+    <div id="div1">
+      <b id="bold">Multiple Choice Questions</b>
+      <span style="color: darkblue">(10 x 1 = 10)</span>
     </div>
-</body>
- 
-<script src="script.js"></script>
+
+    <form id="quizForm">
+      <ol>
+        <li class="list">What is the chemical formula for table salt?</li>
+        <label>
+          <input type="radio" name="question1" value="NaCl" /> 
+          <span style="color:brown; font-family:rockwell">(a) NaCl</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question1" value="KCl" /> 
+          <span style="color:brown;font-family:rockwell">(b) KCl</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question1" value="MgCl" /> 
+          <span style="color:brown; font-family:rockwell">(c) MgCl</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question1" value="KMnO4" /> 
+          <span style="color:brown; font-family:rockwell">(d) KMnO4</span>
+        </label>
+
+        <li class="list">Which of the following is a non-renewable source of energy?</li>
+        <label>
+          <input type="radio" name="question2" value="Wood" />
+          <span style="color:brown; font-family:rockwell">(a) Wood</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question2" value="Sun" />
+          <span style="color:brown; font-family:rockwell">(b) Sun</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question2" value="Fossil fuel" />
+          <span style="color:brown; font-family:rockwell">(c) Fossil fuel</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question2" value="Wind" />
+          <span style="color:brown; font-family:rockwell">(d) Wind</span>
+        </label>
+
+        
+        <li class="list">Fuel used in thermal power plants is</li>
+        <label>
+          <input type="radio" name="question3" value="Water" />
+          <span style="color:brown; font-family:rockwell">(a) Water</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question3" value="Uranium" />
+          <span style="color:brown; font-family:rockwell">(b) Uranium</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question3" value="Biomass" />
+          <span style="color:brown; font-family:rockwell">(c) Biomass</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question3" value="Fossil Fuel" />
+          <span style="color:brown; font-family:rockwell">(d) Fossil Fuel</span>
+        </label>
+
+        
+        <li class="list">Which is the unlimited sources of energy</li>
+        <label>
+          <input type="radio" name="question4" value="Water" />
+          <span style="color:brown; font-family:rockwell">(a) Water</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question4" value="Sun" />
+          <span style="color:brown; font-family:rockwell">(b) Sun</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question4" value="Wind" />
+          <span style="color:brown; font-family:rockwell">(c) Wind</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question4" value="None of the above" />
+          <span style="color:brown; font-family:rockwell">(d) None of the above</span>
+        </label>
+
+        
+        <li class="list">Sound cannot travel throught</li>
+        <label>
+          <input type="radio" name="question5" value="Air" />
+          <span style="color:brown; font-family:rockwell">(a) Air</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question5" value="Water" />
+          <span style="color:brown; font-family:rockwell">(b) Water</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question5" value="vacuum" />
+          <span style="color:brown; font-family:rockwell">(c) Vacuum</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question5" value="solids" />
+          <span style="color:brown; font-family:rockwell">(d) solids</span>
+        </label>
+
+        
+        <li class="list">Frequency is expressed in</li>
+        <label>
+          <input type="radio" name="question6" value="Kilomater" />
+          <span style="color:brown; font-family:rockwell">(a) Kilomater</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question6" value="Hertz" />
+          <span style="color:brown; font-family:rockwell">(b) Hertz</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question6" value="Grams" />
+          <span style="color:brown; font-family:rockwell">(c) Grams</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question6" value="Degree centigrade" />
+          <span style="color:brown; font-family:rockwell">(d) Degree centigrade</span>
+        </label>
+
+        
+        <li class="list">Vibration motion is also knows as</li>
+        <label>
+          <input type="radio" name="question7" value="Vibratory Motion" />
+          <span style="color:brown; font-family:rockwell">(a) Vibratory Motion</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question7" value="Translatory Motion" />
+          <span style="color:brown; font-family:rockwell">(b) Translatory Motion</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question7" value="Oscillatory Motion" />
+          <span style="color:brown; font-family:rockwell">(c) Oscillatory Motion</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question7" value="None of these" />
+          <span style="color:brown; font-family:rockwell">(d) None of these</span>
+        </label>
+
+        
+        <li class="list">The tyres of the heavy vehicles are kept broad to</li>
+        <label>
+          <input type="radio" name="question8" value="Decrease the mass of the vehicle" />
+          <span style="color:brown; font-family:rockwell">(a) Decrease the mass of the vehicle</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question8" value="Increase pressure on the ground" />
+          <span style="color:brown; font-family:rockwell">(b) Increase pressure on the ground</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question8" value="Decrease friction on the ground" />
+          <span style="color:brown; font-family:rockwell">(c) Decrease friction on the ground</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question8" value="Decrease pressure on the ground" />
+          <span style="color:brown; font-family:rockwell">(d) Decrease pressure on the ground</span>
+        </label>
+
+        
+        <li class="list">Which of the following is true of liquid pressure</li>
+        <label>
+          <input type="radio" name="question9" value="It increase with depth" />
+          <span style="color:brown; font-family:rockwell">(a) It increase with depth</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question9" value="It decrease with depth" />
+          <span style="color:brown; font-family:rockwell">(b) It decrease with depth</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question9" value="It is exerted only upward" />
+          <span style="color:brown; font-family:rockwell">(c) It is exerted only upward</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question9" value="It is exerted only downward" />
+          <span style="color:brown; font-family:rockwell">(d) It is exerted only downward</span>
+        </label>
+
+        
+        <li class="list">what type of chemical reactions take place when electricity is passed through water?</li>
+        <label>
+          <input type="radio" name="question10" value="Displacement" />
+          <span style="color:brown; font-family:rockwell">(a) Displacement</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question10" value="Combination" />
+          <span style="color:brown; font-family:rockwell">(b) Combination</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question10" value="Decomposition" />
+          <span style="color:brown; font-family:rockwell">(c) Decomposition</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="question10" value="Double Displacement" />
+          <span style="color:brown; font-family:rockwell">(d) Double Displacement</span>
+        </label>
+
+      </ol>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <div id="result" style="font-family:broadway; color:darkblue; margin-top:20px;"></div>
+
+    <script>
+      alert("press ok to start");
+      let name=prompt("enter your name");
+      function submitQuiz() {
+        var score = 0;
+        var totalQuestions = 10; 
+
+        var answers = {
+          question1: "NaCl",
+          question2: "Fossil fuel",
+          question3: "Uranium",
+          question4: "Sun",
+          question5: "Vacuum",
+          question6: "Hertz",
+          question7: "Oscillatory Motion",
+          question8: "Decrease pressure on the ground",
+          question9: "It increase with depth",
+          question10: "Decomposition",
+        };
+
+        for (var question in answers) {
+          var userAnswer = document.querySelector('input[name="' + question + '"]:checked');
+          if (userAnswer && userAnswer.value === answers[question]) {
+            score++;
+          } else if (!userAnswer) {
+            alert("Please answer all the questions!");
+            return;
+          }
+        }
+        document.getElementById("result").innerHTML = "your score is " + score + " out of " + totalQuestions;
+
+      }
+    </script>
+  </body>
 </html>
